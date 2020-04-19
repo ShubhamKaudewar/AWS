@@ -12,5 +12,18 @@ $url = $cloudfront->getSignedUrl([
     'expires' => $expiry->getTimestamp()
 ]);
 
-echo $url;
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <video controls width="768">
+        <source src="<?php echo $url; ?>" type="video/mp4">
+    </video>
+</body>
+</html>
