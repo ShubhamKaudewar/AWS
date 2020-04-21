@@ -2,7 +2,7 @@
 
 require 'app/start.php';
 
-$object = 'video_20190725_192309.mp4';
+$object = 'flareMini.mp4';
 $expiry = new DateTime('+10 minutes');
 
 $url = $cloudfront->getSignedUrl([
@@ -22,7 +22,7 @@ $url = $cloudfront->getSignedUrl([
     <title>Video</title>
 </head>
 <body>
-    <video controls width="768">
+    <video controls width="768" controls controlsList="nodownload">
         <source src="<?php echo $url; ?>" type="video/mp4">
     </video>
 </body>
