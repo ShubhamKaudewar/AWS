@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+body{
+    margin: 1rem;
+    font-family: MaisonNeue;
+    /* font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+}
+@font-face {
+    font-family: Spoof;
+    src: url(./assets/fonts/Spoof-Bold.woff2);
+  }
+  
+@font-face {
+    font-family: MaisonNeue;
+    src: url(./assets/fonts/MaisonNeue-Bold.woff2);
+  }
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: rgb(59, 69, 255, 0.5); */
+    box-shadow: inset 5px 5px 3px #3b45ff;
+    padding: 1rem 5rem 1rem 5rem;
+    border-radius: 10px;
+    position: sticky;
+    z-index: 2;
+    top: 3%;
+    background-color: white;
+}
+.navPartTwo>ul{
+    display: flex;
+    flex-direction: row;
+}
+.navPartTwo>ul>li{
+    padding: 0rem 20px 0rem 20px;
+    list-style-type: none;
+    font-size: 1.5rem;
+    transition: 0ms;
+    /* color: rgba(255, 255, 255, 1); */
+}
+.navPartTwo>ul>li:hover{
+    background-color: #3b45ff;
+    box-shadow: 5px 5px 3px lightgrey;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: -2rem 0rem -1rem 0rem;
+    color: white;
+    padding-top: 2rem;
+    transition: 200ms;
+    cursor: pointer;
+}
+.sectionOne{
+    height: 100vh;
+}
+.overall{
+    display: flex;
+    flex-direction: row;
+}
+.partOne{
+    width: 50%;
+    position: sticky;
+    margin: 90vh 0px 0px 0%;
+}
+.orbiit {
+    animation: MoveUpDown 5s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    filter: opacity(0.7);
+  }
+  .orbiit>img{
+    width: 100%;
+    padding-left: 10%;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+  }
+.partTwo{
+    width: 50%;
+    padding: 5vh 10% 0px 10%;
+}
+.title{
+    text-align: center;
+    color: #3b45ff;
+    font-size: 12rem;
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+    text-shadow: 5px 5px 3px lightgrey;
+}
+.desc{
+    color: rgba(0, 0, 0, 0.8);
+    font-family: MaisonNeue,Helvetica,Arial,sans-serif;
+    animation: 4s cubic-bezier(0, 0, 0.2, 1) 0s 1 slideInFromRight;
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromRight{
+    0% {
+        transform: translateY(+100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.scrollDown{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+.scrollDown>i{
+    font-weight: bolder;
+    color: rgba(255,255,255,1);
+    background: #3b45ff;
+    padding: 9px 15px; 
+    border-radius: 40px;
+    box-shadow: 5px 5px 3px lightgrey;
+    animation: 2s cubic-bezier(0, 0, 0.2, 1) 0s 1 slideInFromDown;
+}
+.scrollDown>span{
+    padding-left: 2rem;
+    opacity: 0.6;
+    font-size: 2rem;
+}
+
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(+100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  }
