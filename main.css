@@ -527,7 +527,7 @@ nav{
     padding: 1rem 0rem 1rem 0rem;
 }
     .navbarPhone{
-        display: initial;
+        display: none;
     }
     .sectionOne{
         min-height: 100%;
