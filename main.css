@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
 body{
-    margin: 1rem;
-    font-family: MaisonNeue;
+    font-family: MaisonNeueBook;
+    margin: 0;
     /* font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif; */
 }
@@ -14,18 +14,24 @@ body{
     font-family: MaisonNeue;
     src: url(./assets/fonts/MaisonNeue-Bold.woff2);
   }
+@font-face {
+    font-family: MaisonNeueBook;
+    src: url(./assets/fonts/MaisonNeue-Book.woff2);
+}
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* background-color: rgb(59, 69, 255, 0.5); */
-    box-shadow: inset 5px 5px 3px #3b45ff;
     padding: 1rem 5rem 1rem 5rem;
-    border-radius: 10px;
     position: sticky;
     z-index: 2;
-    top: 3%;
-    background-color: white;
+    top: 0%;
+    background-color: white ;
+    border-bottom-color: #3b45ff;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    box-shadow: 0px 1px 10px lightgrey;
 }
 .navPartTwo>ul{
     display: flex;
@@ -35,7 +41,7 @@ nav{
     padding: 0rem 20px 0rem 20px;
     list-style-type: none;
     font-size: 1.5rem;
-    transition: 0ms;
+    transition: 200ms;
     /* color: rgba(255, 255, 255, 1); */
 }
 .navPartTwo>ul>li:hover{
@@ -46,8 +52,10 @@ nav{
     margin: -2rem 0rem -1rem 0rem;
     color: white;
     padding-top: 2rem;
+    transform: scale(1.05);
     transition: 200ms;
     cursor: pointer;
+    /* font-size: 1.7rem; */
 }
 .sectionOne{
     height: 100vh;
@@ -147,3 +155,320 @@ nav{
         transform: translateY(0%);
     }
   }
+
+  /* section two */
+.sectionTwo{
+    height: 70vh;
+    background-color: #3b45ff;
+}
+.vision{
+    padding: 5vh 5% 0px 5%;
+    border-top-style: dashed;
+    border-color: #3b45ff;
+    border-width: 2px;
+}
+.visionTitle{
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    width: fit-content;
+    font-size: 4rem;
+    padding: 5px 1rem 5px 1rem;
+    color: blue;
+    background-color: white;
+    border-radius: 20px 20px 0px 20px;
+}
+.visionLine{
+    margin: 4rem 0rem 0rem 2rem;
+    width: 10%;
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: white;
+}
+.visionDesc{
+    padding: 1rem 0rem 0rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* Section Three About Us */
+.sectionThree{
+    height: auto;
+}
+.aboutUs{
+    display: flex;
+    flex-direction: row;
+    padding: 10vh 5% 10vh 5%;
+    justify-content: space-evenly;
+}
+.aboutUsPartOne{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.aboutUsPartOneTitle{
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+    font-size: 5rem;
+    color: #3b45ff;
+}
+.aboutUsPartOneDesc{
+    font-size: 1.7rem;
+    padding: 1rem 0rem 3rem 3rem;
+    color: rgba(0,0,0,0.6);
+}
+.aboutUsPartOneBanner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.aboutUsPartOneBanner>div>img{
+    width: auto;
+    height: 10vh;
+}
+
+/* sectionFour */
+.featuresTitle{
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+    font-size: 4rem;
+    color: #3b45ff;
+    padding: 0rem 0rem 2rem 0rem;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid blue;
+    margin: 1rem 0rem 2rem 0rem;
+    padding: 0rem 2rem 2rem 2rem;
+    border-radius: 20px 20px 0px 20px;
+    transition: 1s;
+    cursor: pointer;
+    min-height: 30vh;
+    justify-content: space-evenly;
+}
+.card:hover{
+    background-color: #3b45ff;
+    transform: scale(1.2) !important;
+    transition: 1s;
+}
+.cardImage>img{
+    margin-top: -5rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.cards>div:nth-of-type(2n){
+    margin-top: 4rem;
+}
+.cards>div:nth-of-type(2n+1){
+    margin-bottom: 4rem;
+}
+.cardTitle{
+    color: #3b45ff;
+    font-size: 2rem;
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+}
+.card:hover>.cardTitle{
+    color: white;
+}
+.cardDesc{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* section Five Registration */
+.sectionFive{
+    background-color: #3b45ff;
+    padding: 5rem 0rem 0rem 5rem;
+    height: 100vh;
+}
+.registration{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.regMainTitle{
+    padding: 5rem 0rem 4rem 0rem;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    font-family: MaisonNeue;
+}
+.regText{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-color: blue;
+    border-style: solid;
+    border-radius: 3rem 3rem 0rem 3rem;
+    background: white;
+    justify-content: space-evenly;
+}
+.regInfo{
+    display: flex;
+    flex-direction: row;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 2rem 1rem 1rem 2rem;
+
+}
+.regIcon{
+    font-size: 1.5rem;
+    background: rgb(59, 69, 255);
+    padding: 1.5rem;
+    color: white;
+    border-radius: 10rem;
+}
+.regContent{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem 0rem 3rem;
+}
+.regTitle{
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    font-family: MaisonNeue;
+}
+.regDesc{
+    color: rgb(59, 69, 255);
+    font-size: 1.4rem;
+    background: white;
+}
+
+
+/* Meet Our Team */
+.sectionSix{
+    background-color: white;
+    padding: 5rem 4rem 5rem 4rem;
+}
+.teamTitle{
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+    font-size: 4rem;
+    color: #3b45ff;
+    padding: 2rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+/* sectionSix Packages */
+.package{
+    background-color: #3b45ff;
+    color: white;
+}
+.packageTitle{
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    padding: 0rem 0rem 2rem 0rem;
+    text-align: center;
+}
+.packageAllCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.packageCard{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    margin: 1rem 0rem 2rem 0rem;
+    padding: 0rem 2rem 2rem 2rem;
+    border-radius: 20px 20px 0px 20px;
+    transition: 1s;
+    cursor: pointer;
+    min-height: 30vh;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.packageCard:hover{
+    background-color: white;
+    transform: scale(1.2) !important;
+    transition: 1s;
+}
+.packageAllCards>div:nth-of-type(2n){
+    margin-top: 4rem;
+}
+.packageAllCards>div:nth-of-type(2n+1){
+    margin-bottom: 4rem;
+}
+.packageCardMoney{
+    text-align: center;
+    width: fit-content;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-top: -3rem;
+    background-color: #3b45ff;
+    color: white;
+    font-size: 3rem;
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+    border-radius: 3rem;
+    border: 5px solid white;
+}
+.packageCard:hover>.packageCardMoney{
+    color: white;
+}
+.packageCardClass{
+    padding: 2rem 1rem 1rem 1rem;
+    font-size: 2rem;
+    color: #3b45ff;
+    border-bottom: 3px solid #3b45ff;
+}
+.packageCardFeatures>ul>li{
+    list-style-type: none;
+    color: black;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+/* Contact us */
+.sectionEight{
+    height: 50vh;
+}
+.contactTitle{
+    font-family: Spoof,Helvetica,Arial,sans-serif;
+    font-size: 4rem;
+    color: #3b45ff;
+    padding: 0rem 0rem 2rem 0rem;
+    text-align: center;
+}
+.contactInfo{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contactInfo>div{
+    display: flex;
+    flex-direction: column;
+}
+.contactCallTitle,.contactMailTitle{
+    font-size: 2rem;
+    font-family: MaisonNeue;
+    color: #3b45ff;
+}
+.contactCallValue,.contactMailValue{
+    font-size: 1.6rem;
+    font-family: MaisonNeueBook;
+    color: black;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    font-size: 2rem;
+    height: 10vh;
+    font-family: MaisonNeue;
+    background-color: #3b45ff;
+    color: white;
+    padding: 3rem 0rem 0rem 0rem;
+}

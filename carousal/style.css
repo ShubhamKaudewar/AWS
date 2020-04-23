@@ -1,0 +1,165 @@
+
+[class^="swiper-button-"] {
+  transition: all .3s ease;
+}
+body{
+  font-family: MaisonNeueBook;
+  margin: 0;
+  /* font-family: 'Oswald', sans-serif;
+  font-family: 'Spoof', sans-serif; */
+}
+@font-face {
+  font-family: Spoof;
+  src: url(../assets/fonts/Spoof-Bold.woff2);
+}
+
+@font-face {
+  font-family: MaisonNeue;
+  src: url(../assets/fonts/MaisonNeue-Bold.woff2);
+}
+@font-face {
+  font-family: MaisonNeueBook;
+  src: url(../assets/fonts/MaisonNeue-Book.woff2);
+}
+.swiper-slide {
+  font-family: MaisonNeueBook;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.swiper-container {
+  border: 5px solid #3b45ff;
+  margin-bottom: 1rem !important;
+  font-family: 'Spoof', sans-serif;
+    width: 98%;
+    height: 50vh;
+    margin-top: 0.8%;
+    box-shadow: -5px 5px 18px black;
+  transition: opacity .6s ease, -webkit-transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+}
+.swiper-container.nav-slider {
+  width: 0%;
+  padding-left: 5px;
+}
+.swiper-container.nav-slider .swiper-slide {
+  cursor: pointer;
+  opacity: .4;
+  transition: opacity .3s ease;
+}
+.swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.swiper-container.nav-slider .swiper-slide .content {
+  width: 100%;
+}
+.swiper-container.nav-slider .swiper-slide .content .titleCarousal {
+  font-size: 20px;
+}
+.swiper-container:hover>.swiper-button-prev,
+.swiper-container:hover>.swiper-button-next {
+  background: #3b45ff;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.swiper-container.loading {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+.swiper-slide .slide-bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  transition: all 0ms ease 0s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  position: absolute;
+}
+.swiper-slide .entity-img {
+  display: none;
+}
+.swiper-slide .content {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 50%;
+  padding-left: 10%;
+  color: black;
+}
+.titleCarousal{
+  font-size: 3rem !important;
+}
+.caption{
+  color: black !important;
+  font-family: MaisonNeue;
+}
+.swiper-slide .content .titleCarousal {
+  color: #3b45ff;
+  padding: 0;
+  text-shadow: 2px 2px 5px grey;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+.swiper-slide .content .caption {
+  color: #3b45ff;
+  display: block;
+  font-size: 20px;
+  line-height: 1.4;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+  transition: opacity .3s ease, -webkit-transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease;
+}
+.swiper-slide .content .caption.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+[class^="swiper-button-"] {
+  width: 44px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-button-prev {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.swiper-button-next {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+  .swiper-container{
+    height: 45vh;
+    margin-top: 4%;
+  }
+  .swiper-slide .content .caption {
+  font-size: 3rem;
+  }
+  
+.swiper-slide .content .titleCarousal {
+  margin-bottom: 80px;
+  font-size: 4rem !important;
+}
+.swiper-slide .content {
+  top: 5%;
+  font-size: 2rem;
+  width: 95%;
+}
+}

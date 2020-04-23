@@ -1,17 +1,3 @@
-body {
-  background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEX4+Pj09PQf/c7fAAAAGklEQVR4Xq3MIQEAAADDIPqX/kvMIMEWEm8O7b0/wewc/NcAAAAASUVORK5CYII=) repeat;
-}
-
-.block {
-  height: 5em;
-  line-height: 5em;
-  width: 10em;
-  background: #464646;
-  color: #fdfdfd;
-  text-align: center;
-  margin: 1em auto;
-  text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
-}
 
 .animatable {
   
@@ -482,7 +468,7 @@ body {
 		background:none;
 	}
 	100%{
-		background:#464646;
+		background:#fff;
 	}
 }
 @-o-keyframes fadeBgColor {
@@ -493,7 +479,7 @@ body {
 		background:none;
 	}
 	100%{
-		background:#464646;
+		background:#fff;
 	}
 }
 @keyframes fadeBgColor {
@@ -504,7 +490,7 @@ body {
 		background:none;
 	}
 	100%{
-		background:#464646;
+		background:#fff;
 	}
 }
 
