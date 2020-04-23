@@ -18,9 +18,14 @@
 
   <!-- Smooth Scroll Behavious -->
   <script src="./smoothScroll/script.js"></script>
+
+  <!-- Navbar Phone -->
+  <link rel="stylesheet" href="./common/bootstrap/css/bootstrap.min.css">
+  <script src="./common/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./common/navbar/navbar.css">
 </head>
 <body>
-    <nav class="navabar">
+    <nav class="navbarDesktop">
         <div class="navPartOne"><img src="./assets/logo.png" alt="logo"></div>
         <div class="navPartTwo">
             <ul>
@@ -34,6 +39,8 @@
             </ul>
         </div>
     </nav>
+    
+    <div w3-include-html="./common/navbar/navbar.html"></div>
     <!-- Main section -->
     <section class="sectionOne" id="home">
         <div class="overall">

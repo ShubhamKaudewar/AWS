@@ -1,0 +1,21 @@
+.navbar-inverse {
+    background-color: #ffffff !important;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000 !important;
+}
+.navbar{
+    max-height: 10vh;
+}
+.navbar-right{
+    padding-right: 0px !important;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background-color: white;
+}
+.navbar-toggle {
+    margin-right: 47px;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #fff;
+}

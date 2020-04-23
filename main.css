@@ -20,6 +20,9 @@ body{
     font-family: MaisonNeueBook;
     src: url(./assets/fonts/MaisonNeue-Book.woff2);
 }
+.navbarPhone{
+    display: none;
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -516,8 +519,15 @@ footer{
 
 
 @media screen and (max-device-width:500px), screen and (max-width:500px) {
-    nav{
+    .navbarDesktop{
         display: none;
+    }
+    
+nav{
+    padding: 1rem 0rem 1rem 0rem;
+}
+    .navbarPhone{
+        display: initial;
     }
     .sectionOne{
         min-height: 100%;
