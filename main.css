@@ -536,9 +536,9 @@ nav{
     flex-direction: column;
 }
 .partOne{
-    height: 40vh;
+    height: 35vh;
     width: 100%;
-    margin: 20vh 0px 0px 0%;
+    margin: 15vh 0px 0px 0%;
 }
 .orbiit {
     position: relative;
