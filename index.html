@@ -15,22 +15,27 @@
   <link rel="stylesheet" href="./carousal/swiperMin.css">
   <link rel="stylesheet" href="./carousal/style.css">
   <script src="./assets/jquery/common.js"></script>
+
+  <!-- Smooth Scroll Behavious -->
+  <script src="./smoothScroll/script.js"></script>
 </head>
 <body>
     <nav class="navabar">
         <div class="navPartOne"><img src="./assets/logo.png" alt="logo"></div>
         <div class="navPartTwo">
             <ul>
-                <li>Vision</li>
-                <li>About Us</li>
-                <li>Features</li>
-                <li>Team</li>
-                <li>Pricing</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#package">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <!-- Main section -->
-    <section class="sectionOne">
+    <section class="sectionOne" id="home">
         <div class="overall">
             
             <div class="partOne">
@@ -51,7 +56,8 @@
     <script src="./typrwritter/mainTitle.js"></script>
     <script src="./typrwritter/scrollDown.js"></script>
 
-    <section class="sectionTwo">
+    <!-- Vision -->
+    <section class="sectionTwo" id="vision">
         <div class="vision">
             <div class="visionTitle animatable bounceInLeft">Vision</div>
             <div class="visionLine animatable bounceInLeft"></div>
@@ -59,7 +65,8 @@
         <div>
     </section>
 
-  <section class="sectionThree">
+    <!-- About US -->
+  <section class="sectionThree" id="about">
     <div class="aboutUs">
         <div class="aboutUsPartOne">
             <div class="aboutUsPartOneTitle animatable bounceInLeft">About Us</div>
@@ -80,7 +87,7 @@
   </section>
 
   <!-- Features -->
-  <section class="sectionFour">
+  <section class="sectionFour" id="feature">
     <div class="features">
         <div class="featuresTitle">Features</div>
         <div class="featuresCards">
@@ -121,7 +128,7 @@
   </section>
 
   <!-- Easy Registration -->
-  <section class="sectionFive">
+  <section class="sectionFive" id="register">
       <div class="regMainTitle animatable bounceInRight">Easy Registration</div>
     <div class="registration">
         <div><img src="./assets/easyreg.png" alt="Easy Registration"></div>
@@ -152,14 +159,14 @@
   </section>
   
   <!-- Meet Out Team -->
-  <section class="sectionSix">
+  <section class="sectionSix" id="team">
     <div class="teamTitle">Meet Our Team</div>
     <div w3-include-html="./carousal/index.html"></div>
   </section>
 
   
   <!-- Our Packages -->
-  <section class="sectionSeven">
+  <section class="sectionSeven" id="package">
     <div class="package">
         <div class="packageTitle">Our Packages</div>
         <div class="packageCards">
@@ -212,16 +219,27 @@
   </section>
 
   <!-- Contact US -->
-  <section class="sectionEight">
-    <div class="contactTitle animatable moveUp">Contact Info</div>
+  <section class="sectionEight" id="contact">
+    <div class="contactTitle animatable bounceInRight">Contact Info</div>
+    <div class="contactTitleLine animatable bounceInLeft"></div>
     <div class="contactInfo">
         <div class="contactMail animatable fadeInUp">
-            <div class="contactMailTitle">Email Us</div>
-            <div class="contactMailValue">contact@orbiit.in</div>
+        <a href="mailto:contact@orbiit.in" target="_top">
+            <div class="contactMailIcon animatable bounceInLeft"><i class="fa fa-envelope"></i></div>
+            <div class="contactMailInfos">
+                <div class="contactMailTitle">Email Us</div>
+                <div class="contactMailValue">contact@orbiit.in</div>
+            </div>
+        </a>
         </div>
         <div class="contactCall animatable fadeInDown">
-            <div class="contactCallTitle">Call Us</div>
-            <div class="contactCallValue">+91-9137131537</div>
+        <a href="tel:+91-9137131537" target="_top">
+            <div class="contactCallIcon animatable bounceInLeft"><i class="fa fa-phone-square"></i></div>
+            <div class="contactCallInfos">
+                <div class="contactCallTitle">Call Us</div>
+                <div class="contactCallValue">+91-9137131537</div>
+            </div>
+        </a>
         </div>
     </div>
   </section>

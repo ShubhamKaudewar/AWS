@@ -2,6 +2,8 @@
 body{
     font-family: MaisonNeueBook;
     margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     /* font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif; */
 }
@@ -57,6 +59,16 @@ nav{
     cursor: pointer;
     /* font-size: 1.7rem; */
 }
+.navPartTwo>ul>li>a{
+    text-decoration: none;
+    color: #3b45ff;
+}
+.navPartTwo>ul>li:hover>a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Section One */
 .sectionOne{
     height: 100vh;
 }
@@ -231,9 +243,11 @@ nav{
 .featuresTitle{
     font-family: Spoof,Helvetica,Arial,sans-serif;
     font-size: 4rem;
-    color: #3b45ff;
-    padding: 0rem 0rem 2rem 0rem;
-    text-align: center;
+    padding: 0rem 0rem 1rem 0rem;
+    margin: 2rem 0rem 5rem 0rem;
+    text-align: center;    
+    background: #3b45ff;
+    color: white;
 }
 .cards{
     display: flex;
@@ -437,8 +451,15 @@ nav{
     font-family: Spoof,Helvetica,Arial,sans-serif;
     font-size: 4rem;
     color: #3b45ff;
-    padding: 0rem 0rem 2rem 0rem;
-    text-align: center;
+    padding: 0rem 0rem 0rem 3rem;
+    text-align: left;
+}
+.contactTitleLine{
+    margin: 0rem 0rem 4rem 5rem;
+    width: 30%;
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: #3b45ff;
 }
 .contactInfo{
     width: 70%;
@@ -447,9 +468,29 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
-.contactInfo>div{
+.contactMail>a,.contactCall>a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 1rem 0rem 1rem;
+    transform: scale(1.0);
+    transition: 600ms;
+}
+.contactMail>a:hover,.contactCall>a:hover{
+    border: 2px solid #3b45ff;
+    border-radius: 30px 30px 0px 30px;
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.contactMailIcon,.contactCallIcon{
+    font-size: 4rem;
+    color: #3b45ff;
+    padding: 1rem;
+}
+.contactMailInfos,.contactCallInfos{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .contactCallTitle,.contactMailTitle{
     font-size: 2rem;
@@ -471,4 +512,232 @@ footer{
     background-color: #3b45ff;
     color: white;
     padding: 3rem 0rem 0rem 0rem;
+}
+
+
+@media screen and (max-device-width:500px), screen and (max-width:500px) {
+    nav{
+        display: none;
+    }
+    .sectionOne{
+        min-height: 100%;
+    }
+.overall{
+    flex-direction: column;
+}
+.partOne{
+    height: 30vh;
+    width: 100%;
+    margin: 15vh 0px 0px 0%;
+}
+.orbiit {
+    position: relative;
+  }
+  .orbiit>img{
+      width: 70%;
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 50px;
+    }
+  }
+.partTwo{
+    width: 90%;
+    padding: 0vh 10% 0px 0%;
+}
+.title{
+    font-size: 5rem;
+}
+.desc{
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+}
+.scrollDown{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.scrollDown>span{
+    padding-left: 2rem;
+    opacity: 0.6;
+    font-size: 1rem;
+}
+
+/* Vision */
+.sectionTwo{
+    height: 50vh;
+}
+.visionTitle{
+    font-size: 2rem;
+}
+.visionLine{
+    margin: 0.5rem 0rem 0rem 1rem;
+    width: 42%;
+}
+.visionDesc{
+    width: 90%;
+    padding: 1rem 0rem 0rem 2rem;
+    font-size: 1.2rem;
+}
+
+
+/* About Us */
+.aboutUs{
+    padding: 5vh 0% 5vh 0%;
+    flex-direction: column;
+}
+.aboutUsPartOne{
+    width: 90%;
+    margin:0rem 5% 0rem 5%;
+}
+.aboutUsPartOneTitle{
+    font-size: 3rem;
+}
+.aboutUsPartOneDesc{
+    margin: 0rem 1rem 0rem 0rem;
+    font-size: 1.3rem;    
+    padding: 0.5rem 0rem 2rem 1rem;
+}
+.aboutUsPartOneBanner{
+    flex-direction: column;
+    margin: 0rem 0rem 0rem 1rem;
+}
+.aboutUsPartOneBanner>div>img{
+    width: 90%;
+    height: auto;
+}
+.aboutUsPartTwo{
+    display: none;
+}
+
+/* Features */
+.featuresTitle{
+    font-size: 3rem;
+    width: 100%;
+}
+.featuresCards{
+    width: 100%;
+}
+.cards{
+    flex-direction: column;
+}
+.card{
+    width: 70%;
+    margin: 0rem 5% 0rem 5%;
+}
+.cards>div{
+    margin: 5rem 5% 5rem 5%;
+}
+
+/* Registration */
+.sectionFive{
+    width: 100%;
+    padding: 0rem 0rem 0rem 0rem;
+    height: auto;
+}
+.regMainTitle{
+    padding: 2rem 0rem 2rem 0rem;
+    font-size: 2rem;
+}
+.registration{
+    flex-direction: column;
+}
+.registration>div{
+    width: 90%;
+    margin-left: 10%;
+}
+.regText{
+    margin: 3rem 0rem 3rem 0rem;
+    width: 90%;
+    margin-left: 5% !important;
+}
+.regIcon{
+    padding: 1rem;
+    border-radius: 10px 10px 0px 10px;
+}
+.regTitle{
+    font-size: 1.3rem;
+}
+.regDesc{
+    font-size: 1rem;
+}
+
+
+/* Team */
+.sectionSix{
+    padding: 1rem 0rem 0rem 0rem;
+}
+.teamTitle{
+    font-size: 2rem;
+}
+
+/* Package */
+.sectionSeven{
+    height: auto;
+}
+.packageTitle{
+    padding-top: 5rem;
+    font-size: 2.5rem;
+}
+.packageAllCards{
+    flex-direction: column;
+}
+.packageCard{
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.packageCardMoney{
+    font-size: 2rem;
+    margin-top: -14%;
+}
+.packageCardFeatures>ul>li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.packageCardFeatures>ul{
+    padding: 0;
+    margin: 0px !important;
+}
+.packageCardClass {
+    padding: 2rem 0rem 1rem 0rem;
+    font-size: 1.4rem;
+}
+.packageAllCards>div{
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+}
+/* Contact Us */
+.contactTitle{
+    font-size: 2rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+.contactInfo{
+    width: 90%;
+    margin-left: 5%;
+    flex-direction: column;
+}
+.contactMailIcon, .contactCallIcon {
+    font-size: 3rem;
+}
+.contactCallTitle, .contactMailTitle {
+    font-size: 1.3rem;
+}
+.contactTitleLine {
+    margin: 0.5rem 0rem 2rem 1rem;
+    width: 75%;
+}
+.contactCallValue, .contactMailValue {
+    font-size: 1rem;
+}
+.contactMail>a:hover,.contactCall>a:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+/* Footer */
+footer{
+    font-size: 1.3rem;
+}
 }

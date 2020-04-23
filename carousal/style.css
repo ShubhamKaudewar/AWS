@@ -146,20 +146,32 @@ body{
 }
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
   .swiper-container{
-    height: 45vh;
-    margin-top: 4%;
+    width: auto;
+    height: 50vh;
   }
   .swiper-slide .content .caption {
-  font-size: 3rem;
+  font-size: 1rem;
   }
-  
+  .content{
+    padding-left: 3% !important;
+  }
+  .titleCarousal{
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 1%;
+  }
 .swiper-slide .content .titleCarousal {
-  margin-bottom: 80px;
-  font-size: 4rem !important;
+  color: white;
+  margin-bottom: 0px;
+  font-size: 1.5rem !important;
 }
 .swiper-slide .content {
-  top: 5%;
-  font-size: 2rem;
+  font-size: 1rem;
   width: 95%;
+  top: 0%;
 }
+.caption{
+  margin-top: 35%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 }
