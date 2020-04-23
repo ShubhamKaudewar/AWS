@@ -8,11 +8,11 @@ var s=0;
                 document.getElementsByClassName('scrollSpan')[0].innerHTML += Scroll.charAt(s);
               }
             s++;
-            setTimeout(mainScroll, 300);
+            setTimeout(mainScroll, 50);
           }
         }
         function iconScroll(){
             document.getElementsByClassName('scrollDown')[0].innerHTML += '<i class="fa fa-angle-double-down"></i>';
         }
-        setTimeout(iconScroll, 19500);
-    setTimeout(mainScroll, 16000);
+        setTimeout(iconScroll, 7000);
+    setTimeout(mainScroll, 6000);

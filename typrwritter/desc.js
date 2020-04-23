@@ -8,7 +8,7 @@ var m=0;
                 document.getElementsByClassName('desc')[0].innerHTML += desc.charAt(m);
               }
             m++;
-            setTimeout(mainDesc, 80);
+            setTimeout(mainDesc, 20);
           }
         }
-    setTimeout(mainDesc, 4000);
+    setTimeout(mainDesc, 3000);
