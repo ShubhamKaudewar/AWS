@@ -713,7 +713,7 @@ footer{
 /* Contact Us */
 .contactTitle{
     font-size: 2rem;
-    padding: 0rem 0rem 0rem 0rem;
+    padding: 3rem 0rem 0rem 2rem;
 }
 .contactInfo{
     width: 90%;
@@ -727,7 +727,7 @@ footer{
     font-size: 1.3rem;
 }
 .contactTitleLine {
-    margin: 0.5rem 0rem 2rem 1rem;
+    margin: 0.5rem 0rem 2rem 3rem;
     width: 75%;
 }
 .contactCallValue, .contactMailValue {
