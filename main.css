@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
 body{
-    font-family: MaisonNeueBook;
-    margin: 0;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    font-family: MaisonNeueBook !important;
+    margin: 0 !important;
+    scroll-behavior: smooth !important;
+    overflow-x: hidden !important;
     /* font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif; */
 }
