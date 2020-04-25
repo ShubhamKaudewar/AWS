@@ -660,6 +660,7 @@ nav{
 /* About Us */
 .sectionThree{
     flex-direction: column;
+    padding: 1rem;
 }
 .aboutUs{
     padding: 5vh 0% 5vh 0%;
