@@ -4,8 +4,17 @@ body{
     margin: 0 !important;
     scroll-behavior: smooth !important;
     overflow-x: hidden !important;
+    background-color: #d3e3fc;
     /* font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif; */
+}
+/* Color Pellats */
+.httt{
+    color: #3b45ff;
+    color: #00887a;
+    color: #ffccbc;
+    color: #d3e3fc;
+    color: #ffffff;
 }
 @font-face {
     font-family: Spoof;
@@ -114,12 +123,12 @@ nav{
 }
 .title{
     text-align: center;
-    color: #3b45ff;
+    color: white;
     font-size: 12rem;
     font-family: Spoof,Helvetica,Arial,sans-serif;
     /* This section calls the slideInFromLeft animation we defined above */
     animation: 2s ease-out 0s 1 slideInFromLeft;
-    text-shadow: 5px 5px 3px lightgrey;
+    text-shadow: 7px 7px 5px black;
 }
 .desc{
     color: rgba(0, 0, 0, 0.8);
@@ -178,7 +187,7 @@ nav{
   /* section two */
 .sectionTwo{
     height: 70vh;
-    background-color: #3b45ff;
+    background-color: #00887a;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -186,7 +195,7 @@ nav{
 .vision{
     padding: 5vh 5% 0px 5%;
     border-top-style: dashed;
-    border-color: #3b45ff;
+    border-color: #00887a;
     border-width: 2px;
 }
 .visionTitle{
@@ -197,7 +206,7 @@ nav{
     width: fit-content;
     font-size: 4rem;
     padding: 5px 1rem 5px 1rem;
-    color: blue;
+    color:#00887a;
     background-color: white;
     border-radius: 20px 20px 0px 20px;
 }
@@ -250,7 +259,7 @@ nav{
 .aboutUsPartOneTitle{
     font-family: Spoof,Helvetica,Arial,sans-serif;
     font-size: 5rem;
-    color: #030cbb;
+    color: #00887a;
 }
 .aboutUsPartOneDesc{
     font-size: 1.7rem;
@@ -341,7 +350,7 @@ nav{
 
 /* section Five Registration */
 .sectionFive{
-    background-color: #3b45ff;
+    background-color: #00887a;
     padding: 5rem 0rem 0rem 5rem;
     height: 100vh;
 }
@@ -400,7 +409,6 @@ nav{
 
 /* Meet Our Team */
 .sectionSix{
-    background-color: white;
     padding: 5rem 4rem 5rem 4rem;
 }
 .teamTitle{
@@ -413,7 +421,7 @@ nav{
 
 /* sectionSix Packages */
 .package{
-    background-color: #3b45ff;
+    background-color: rgb(49, 153, 143);
     color: white;
 }
 .packageTitle{
@@ -435,7 +443,7 @@ nav{
 }
 .packageAllCards>div:nth-of-type(1){
     background-color: transparent;
-    border-color: darkblue;
+    border-color: #00887a;
     min-height: none;
     border-radius: 50px 50px 0px 50px;
     box-shadow: 0px 0px 20px black;
@@ -470,7 +478,7 @@ nav{
     width: fit-content;
     padding: 0.5rem 2rem 0.5rem 2rem;
     margin-top: -3rem;
-    background-color: #3b45ff;
+    background-color: #00887a;
     color: white;
     font-size: 3rem;
     font-family: Spoof,Helvetica,Arial,sans-serif;
@@ -483,8 +491,8 @@ nav{
 .packageCardClass{
     padding: 2rem 1rem 1rem 1rem;
     font-size: 2rem;
-    color: #3b45ff;
-    border-bottom: 3px solid #3b45ff;
+    color: #00887a;
+    border-bottom: 3px solid #00887a;
 }
 .packageCardFeatures>ul>li{
     list-style-type: none;
