@@ -506,18 +506,6 @@ nav{
     color: black;
 }
 
-/* Footer */
-footer{
-    text-align: center;
-    font-size: 2rem;
-    height: 10vh;
-    font-family: MaisonNeue;
-    background-color: #3b45ff;
-    color: white;
-    padding: 3rem 0rem 0rem 0rem;
-}
-
-
 @media screen and (max-device-width:500px), screen and (max-width:500px) {
     .navbarDesktop{
         display: none;
@@ -527,7 +515,10 @@ nav{
     padding: 1rem 0rem 1rem 0rem;
 }
     .navbarPhone{
-        display: none;
+        display: initial;    
+        position: sticky;
+        z-index: 2;
+        top: 0;
     }
     .sectionOne{
         min-height: 100%;
@@ -746,9 +737,5 @@ nav{
 .contactMail>a:hover,.contactCall>a:hover{
     transform: scale(1.05);
     transition: 300ms;
-}
-/* Footer */
-footer{
-    font-size: 1.3rem;
 }
 }

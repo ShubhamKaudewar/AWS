@@ -10,20 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./scroll/style.css">
     <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/jquery/common.js"></script>
 
-    <!-- Carousal CSS -->
-  <link rel="stylesheet" href="./carousal/swiper.min.css">
-  <link rel="stylesheet" href="./carousal/style.css">
-  <script src="./assets/jquery/common.js"></script>
 
   <!-- Smooth Scroll Behavious -->
   <script src="./smoothScroll/script.js"></script>
 
   <!-- Navbar Phone -->
   <link rel="stylesheet" href="./common/navbar/navbar.css">
-  <script src="./common/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Back To Top -->
+  <link rel="stylesheet" href="./backToTopButton/style.css">
 </head>
+
 <body>
+    <!-- Back to Top -->
+    <a id="backToTopButton" onclick="topFunction()"></a>
+    <script src="./backToTopButton/script.js"></script>
+
+    <!-- Navbar -->
     <nav class="navbarDesktop">
         <div class="navPartOne"><img src="./assets/logo.png" alt="logo"></div>
         <div class="navPartTwo">
@@ -39,7 +43,8 @@
         </div>
     </nav>
     
-    <div w3-include-html="./common/navbar/navbar.html"></div>
+    <div w3-include-html="./common/navbar/navbar.html" class="navbarPhone"></div>
+    <script src="./common/navbar/navbar.js"></script>
     <!-- Main section -->
     <section class="sectionOne" id="home">
         <div class="overall">
@@ -166,8 +171,8 @@
   
   <!-- Meet Out Team -->
   <section class="sectionSix" id="team">
-    <div class="teamTitle">Meet Our Team</div>
-    <div w3-include-html="./carousal/index.html"></div>
+    <div class="teamTitle animatable bounceInLeft">Meet Our Team</div>
+    <div w3-include-html="./carousal/index.html" class="animatable bounceIn"></div>
   </section>
 
   
@@ -250,15 +255,21 @@
     </div>
   </section>
 
+  <link rel="stylesheet" href="./common/footer/footer.css">
   <footer>
-      <div class="footerDesc">All right reserved ORBIIT</div>
+    <div>Connect Us</div>
+    <div>
+        <div><a href="https://www.facebook.com/orbiitedutech/"><i class="fa fa-facebook-official"></a></i></div>
+        <div><a href="https://www.instagram.com/orbiitedutech/"><i class="fa fa-instagram"></i></a></div>
+        <div><a href="https://www.linkedin.com/company/orbiit-edutech/"><i class="fa fa-linkedin"></i></a></div>
+        <div><a href="https://www.youtube.com/channel/UCHZ2iy75fx8EcookTflf3kQ"><i class="fa fa-youtube-play"></i></a></div>
+        <div><a href="https://twitter.com/orbiitedutech"><i class="fa fa-twitter-square"></i></a></div>
+    </div>
+    <div class="footerDesc">All right reserved ORBIIT</div>
   </footer>
   <!-- Lazy Loading Scripts -->
   <script  src="./scroll/script.js"></script>
 
-  <!-- Swipper JS -->
-  <script src="./carousal/swiper-min.js" type="javascript"></script>
-  <script src="./carousal/script.js" type="javascript"></script>
 <script>
     includeNav();
     includeHTML();
