@@ -1,5 +1,7 @@
 
 .topnav {
+  font-family: MaisonNeueBook !important;
+  text-align: center;
     overflow: hidden;
     background-color: white;
     border-bottom: 2px solid #3b45ff;
@@ -10,7 +12,7 @@
   }
   
   .topnav a {
-    color: #3b45ff;
+    color: rgb(38, 48, 252);
     float: left;
     display: block;
     text-align: center;
@@ -18,11 +20,10 @@
     text-decoration: none;
     font-size: 1.7rem;
     transition: 200ms;
-    font-family: MaisonNeue,Helvetica,Arial,sans-serif;
   }
   
   .topnav a:nth-of-type(2n) {
-      background-color: #3b45ff;
+      background-color: #7c83fd;
       color: white;
   }
   .topnav a:hover {
@@ -33,14 +34,14 @@
     transition: 200ms;
   }
   .topnav a.active {
-    color: #3b45ff;
+    color: #222dfc;
 }
   .topnav .icon {
     display: none;
     font-size: 1.7rem;
   }
   .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
-    color: #3b45ff;
+    color: #222dfc;
 }
 .transform{
     transition: 200ms;
@@ -63,7 +64,6 @@
     .topnav.responsive a {
       float: none;
       display: block;
-      text-align: left;
       transition: 200ms;
     }
     .active>img{
