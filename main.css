@@ -592,7 +592,8 @@ nav{
     }
     .sectionOne{
         min-height: 100%;
-        background-position: top;
+        background-position: top; 
+        background-size: 100% 100vh;
     }
 .overall{
     flex-direction: column;
