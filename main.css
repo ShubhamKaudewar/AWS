@@ -74,6 +74,10 @@ nav{
 /* Section One */
 .sectionOne{
     height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.5)),url('./assets/illustrators/backGif.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .overall{
     display: flex;
@@ -106,7 +110,7 @@ nav{
   }
 .partTwo{
     width: 50%;
-    padding: 5vh 10% 0px 10%;
+    padding: 5vh 10% 0px 10%;background-color: rgba(0,0,0,0.1);
 }
 .title{
     text-align: center;
@@ -175,6 +179,9 @@ nav{
 .sectionTwo{
     height: 70vh;
     background-color: #3b45ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .vision{
     padding: 5vh 5% 0px 5%;
@@ -206,9 +213,27 @@ nav{
     font-size: 1.8rem;
     color: white;
 }
-
+.visionImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+.visionImg>div>img{
+    width: 100%;
+    height: auto;
+    border-radius: 0px 40px 0px 40px;
+    box-shadow: 0px 0px 20px black;
+}
 /* Section Three About Us */
 .sectionThree{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.aboutUsImage>img{
+    width: 100%;
     height: auto;
 }
 .aboutUs{
@@ -218,19 +243,20 @@ nav{
     justify-content: space-evenly;
 }
 .aboutUsPartOne{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 .aboutUsPartOneTitle{
     font-family: Spoof,Helvetica,Arial,sans-serif;
     font-size: 5rem;
-    color: #3b45ff;
+    color: #030cbb;
 }
 .aboutUsPartOneDesc{
     font-size: 1.7rem;
     padding: 1rem 0rem 3rem 3rem;
-    color: rgba(0,0,0,0.6);
+    color: black;
+    background-color: rgba(255,255,255,0..2);
 }
 .aboutUsPartOneBanner{
     display: flex;
@@ -243,6 +269,12 @@ nav{
 }
 
 /* sectionFour */
+.sectionFour{
+    background-image: url('./assets/illustrators/features.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 .featuresTitle{
     font-family: Spoof,Helvetica,Arial,sans-serif;
     font-size: 4rem;
@@ -271,6 +303,10 @@ nav{
     cursor: pointer;
     min-height: 30vh;
     justify-content: space-evenly;
+    background-color: rgba(255,255,255,0.6);
+    /* background: linear-gradient(rgba(255,255,255,0.6),rgba(59, 69, 255, 0.3)); */
+    box-shadow: 0px 0px 10px black;
+    /* rgba(59, 69, 255, 0.1); */
 }
 .card:hover{
     background-color: #3b45ff;
@@ -298,8 +334,9 @@ nav{
     color: white;
 }
 .cardDesc{
-    font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1  );
 }
 
 /* section Five Registration */
@@ -392,6 +429,17 @@ nav{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.packageAllCards>div>img{
+    width: 100%;
+    height: auto;
+}
+.packageAllCards>div:nth-of-type(1){
+    background-color: transparent;
+    border-color: darkblue;
+    min-height: none;
+    border-radius: 50px 50px 0px 50px;
+    box-shadow: 0px 0px 20px black;
+}
 .packageCard{
     width: 30%;
     display: flex;
@@ -448,7 +496,15 @@ nav{
 
 /* Contact us */
 .sectionEight{
-    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+.contactInfoImage{
+    width: 40%;
+}
+.contactInfoImage>img{
+    width: 100%;
+    height: auto;
 }
 .contactTitle{
     font-family: Spoof,Helvetica,Arial,sans-serif;
@@ -465,8 +521,8 @@ nav{
     border-color: #3b45ff;
 }
 .contactInfo{
-    width: 70%;
-    margin-left: 15%;
+    width: 100%;
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -482,7 +538,7 @@ nav{
 .contactMail>a:hover,.contactCall>a:hover{
     border: 2px solid #3b45ff;
     border-radius: 30px 30px 0px 30px;
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: 300ms;
 }
 .contactMailIcon,.contactCallIcon{
@@ -522,6 +578,7 @@ nav{
     }
     .sectionOne{
         min-height: 100%;
+        background-position: top;
     }
 .overall{
     flex-direction: column;
@@ -568,7 +625,9 @@ nav{
 
 /* Vision */
 .sectionTwo{
-    height: 50vh;
+    height: auto;
+    flex-direction: column-reverse;
+    padding-bottom: 3rem;
 }
 .visionTitle{
     font-size: 2rem;
@@ -585,6 +644,9 @@ nav{
 
 
 /* About Us */
+.sectionThree{
+    flex-direction: column;
+}
 .aboutUs{
     padding: 5vh 0% 5vh 0%;
     flex-direction: column;
@@ -712,6 +774,12 @@ nav{
     margin-top: 2rem !important;
 }
 /* Contact Us */
+.sectionEight{
+    flex-direction: column;
+}
+.contactInfoImage {
+    width: 100%;
+}
 .contactTitle{
     font-size: 2rem;
     padding: 3rem 0rem 0rem 2rem;
@@ -737,5 +805,8 @@ nav{
 .contactMail>a:hover,.contactCall>a:hover{
     transform: scale(1.05);
     transition: 300ms;
+}
+footer {
+    margin: 0 !important;
 }
 }
