@@ -37,7 +37,8 @@
   <link rel="stylesheet" href="./carousal/swiper.min.css">
   <link rel="stylesheet" href="./carousal/style.css">
 
-
+  <!-- Scroll Indicater-->
+  <link rel="stylesheet" href="./scrollIndicater/style.css">
 </head>
 
 <body>
@@ -59,10 +60,14 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
     </nav>
     
     <div w3-include-html="./common/navbar/navbar.html" class="navbarPhone"></div>
     <script src="./common/navbar/navbar.js"></script>
+    
     <!-- Main section -->
     <section class="sectionOne" id="home">
         <div class="overall">
@@ -328,9 +333,12 @@
   <!-- Lazy Loading Scripts -->
   <script  src="./scroll/script.js"></script>
 
+  <!-- Scroll Indicater -->
+  <script src="./scrollIndicater/script.js"></script>
+
   <!-- Swipper JS -->
+  <script src="./carousal/swiper-min.js" type="javascript"></script>
   <script>
-    $(document).ready(function() {
       var swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
   centeredSlides: true,
@@ -347,9 +355,7 @@
     prevEl: '.swiper-button-prev',
   },
 });
-    });
   </script>
-  <script src="./carousal/swiper-min.js" type="javascript"></script>
 <script>
     includeNav();
     includeHTML();
