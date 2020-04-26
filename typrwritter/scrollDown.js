@@ -1,5 +1,5 @@
 var s=0;
-    var Scroll = 'Scroll Down';
+    var Scroll = 'Lets Explore';
         function mainScroll() {
           if (s < Scroll.length) {
               if (Scroll.charAt(s)=='*') {
