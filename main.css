@@ -31,7 +31,7 @@ nav{
     position: sticky;
     z-index: 2;
     top: 0%;
-    background-color: #f2f2f2;
+    background-color: #e6ecff;
     border-bottom: 2px solid black;
 }
 .navPartTwo>ul{
@@ -48,7 +48,7 @@ nav{
 .navPartTwo>ul>li:hover{
     background-color: rgba(0, 0, 0, 0.6);
     margin: -2rem 0rem -2rem 0rem;
-    color: #f2f2f2;
+    color: #e6ecff;
     padding-top: 2rem;
     cursor: pointer;
     /* font-size: 1.7rem; */
@@ -140,7 +140,7 @@ nav{
 .scrollDown>i{
     font-weight: bolder;
     color: black;
-    background: #f2f2f2;
+    background: #e6ecff;
     padding: 9px 15px; 
     animation: 2s cubic-bezier(0, 0, 0.2, 1) 0s 1 slideInFromDown;
 }
@@ -161,7 +161,7 @@ nav{
 
   /* section two */
 .sectionTwo{
-    background-color: #f2f2f2;
+    background-color: #e6ecff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -170,13 +170,13 @@ nav{
 .vision{
     padding: 5vh 5% 0px 5%;
     border-top-style: dashed;
-    border-color: #f2f2f2;
+    border-color: #e6ecff;
     border-width: 2px;
 }
 .visionTitle{
     font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
     width: fit-content;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 5px 1rem 5px 1rem;
     color:rgba(0, 0, 0, 0.8);
     background-color: white;
@@ -192,7 +192,7 @@ nav{
 .visionDesc{
     padding: 1rem 0rem 0rem 4rem;
     font-size: 1.5rem;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.6);
 }   
 .visionImg{
     text-align: center;
@@ -208,6 +208,7 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2rem 0rem 2rem 2rem;
+    background-color: #e6ecff;
 }
 .aboutUsImage{
     width: 40%;
@@ -230,13 +231,13 @@ nav{
 }
 .aboutUsPartOneTitle{
     font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
-    font-size: 3rem;
-    color: rgba(0, 0, 0, 1);
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.8);
 }
 .aboutUsPartOneDesc{
     font-size: 1.5rem;
     padding: 1rem 0rem 3rem 0rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
 }
 .aboutUsPartOneBanner{
     display: flex;
@@ -250,18 +251,14 @@ nav{
 
 /* sectionFour */
 .sectionFour{
-    background-color: #f2f2f2;
+    background-color: white;
 }
 .featuresTitle{
     font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
-    font-size: 4rem;
-    padding: 0rem 0rem 1rem 0rem;
-    margin: 2rem 0rem 5rem 0rem;
+    font-size: 3rem;
+    padding: 2rem 0rem 0rem 0rem;
     text-align: center;    
-    background: #f2f2f2;
-    color: rgba(0, 0, 0, 1);
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    color: rgba(0, 0, 0, 0.8);
 }
 .cards{
     display: flex;
@@ -274,17 +271,18 @@ nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 2px solid black;
     margin: 3rem 0rem 3rem 0rem;
     padding: 2rem 2rem 2rem 2rem;
     transition: 200ms;
     cursor: pointer;
     min-height: 30vh;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: #e6ecff;
+    border-radius: 10px;
+    border-left: 8px solid rgba(0, 0, 0, 0.6);
+    border-right: 8px solid rgba(0, 0, 0, 0.6);
 }
 .card:hover{
-    background-color: #f2f2f2;
     transform: translateY(-30px) !important;
     transition: 200ms;
 }
@@ -295,8 +293,8 @@ nav{
     margin-bottom: 4rem;
 }
 .cardTitle{
-    color: rgba(0, 0, 0, 1);
-    font-size: 2.1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
     font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
 }
 .card:hover>.cardTitle{
@@ -304,8 +302,8 @@ nav{
 }
 .cardDesc{
     font-size: 1.3rem;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
+    font-family: ibmplexsans-light;
 }
 
 /* section Five Registration */
@@ -320,10 +318,8 @@ nav{
 }
 .regMainTitle{
     text-align: center;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 3rem;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
     padding: 2rem 0rem 2rem 0rem;
     font-family: ibmplexsans-semibold;
 }
@@ -332,7 +328,8 @@ nav{
     flex-direction: column;
     color: white;
     border-left: 4px solid rgba(0, 0, 0, 0.6);
-    background: #f2f2f2;
+    border-right: 4px solid rgba(0, 0, 0, 0.6);
+    background: #e6ecff;
     justify-content: space-evenly;
 }
 .regInfo{
@@ -345,7 +342,7 @@ nav{
     font-size: 1.5rem;
     padding: 1.5rem;
     color: black;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.6);
 }
 .regContent{
     display: flex;
@@ -355,11 +352,11 @@ nav{
 .regTitle{
     font-family: ibmplexsans-semibold;
     padding-top: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .regDesc{
     color: rgba(0, 0, 0, 0.8);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 
@@ -376,33 +373,31 @@ nav{
 
 /* sectionSix Packages */
 .sectionSeven{
-    margin: 2rem 0rem 2rem 0rem;
-    background-color: #f2f2f2;
+    margin: 1rem 0rem 2rem 0rem;
+    background-color: #e6ecff;
 }
 .packageTitle{
     font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
     font-size: 3rem;
-    color: black;
-    padding: 0rem 0rem 1rem 0rem;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 2rem 0rem 1rem 0rem;
     text-align: center;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
 }
 .packageCards{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
 }
 .packageCard{
     text-align: center;
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 2px solid rgba(0, 0, 0, 0.6);
-    border-left: 10px solid rgba(0, 0, 0, 0.6);
+    border-left: 5px solid rgba(0, 0, 0, 0.6);
+    border-right: 4px solid rgba(0, 0, 0, 0.6);
     transition: 300ms;
     cursor: pointer;
     min-height: 30vh;
@@ -414,18 +409,19 @@ nav{
     transition: 300ms;
 }
 .packageCardMoney{
-    color: black;
-    font-size: 3rem;
-    font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
 }
 .packageCardClass{
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: rgba(0, 0, 0, 0.8);
+    font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
 }
 .packageCardFeatures>ul>li{
-    color: black;
-    font-size: 1.6rem;
+    list-style-type: square;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.3rem;
     text-align: left;
     line-height: 2rem;
 }
@@ -444,17 +440,17 @@ nav{
 }
 .contactTitle{
     font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
-    font-size: 3rem;
-    color: black;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.8);
     padding: 0rem 0rem 0rem 3rem;
     text-align: left;
 }
 .contactTitleLine{
     margin: 0rem 0rem 4rem 5rem;
-    width: 30%;
+    width: 50%;
     border-width: 5px 0px 0px 0px;
     border-style: solid;
-    border-color: black;
+    border-color: rgba(0, 0, 0, 0.6);
 }
 .contactInfo{
     width: 100%;
@@ -465,13 +461,13 @@ nav{
 }
 .contactMail>a,.contactCall>a{
     border-left: 4px solid rgba(0, 0, 0, 0.8);
-    border: 2px solid black;
     margin: 0rem 1rem 0rem 1rem;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     padding: 0rem 1rem 0rem 1rem;
     transition: 200ms;
+    background-color: #e6ecff;
 }
 .contactMail>a:hover,.contactCall>a:hover{
     transform: translateY(-20px);
@@ -489,11 +485,11 @@ nav{
 }
 .contactCallTitle,.contactMailTitle{
     font-family: ibmplexsans-semibold,Helvetica,Arial,sans-serif;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.6);
 }
 .contactCallValue,.contactMailValue{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-family: ibmplexsans-light;
     color: black;
 }
